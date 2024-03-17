@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+
+:root {
+    --primary: #E00911;
+    --secondary: #312C7F;
+    --white: #FFFFFF;
+    --black: #000000;
+    --poppins: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: var(--poppins);
+    margin: 0;
+    padding: 0;
+}
+
+.custom-bg-primary {
+    background-color: var(--primary);
+}
+
+.custom-bg-secondary {
+    background-color: var(--secondary);
+}
+
+.custom-bg-white {
+    background-color: var(--white);
+}
+
+.custom-text-primary {
+    color: var(--primary);
+}
+
+.custom-text-secondary {
+    color: var(--secondary);
+}
+
+.custom-text-white {
+    color: var(--white);
+}
+
+.custom-border-primary {
+    border-color: var(--primary);
+}
+
+.font-poppins {
+    font-family: var(--poppins);
+}
+
+header {
+    display: flex;
+    /* padding: 16px 150px; */
+    justify-content: space-between;
+    /* align-items: center;
+    align-self: stretch; */
+}
+
+.top-logo {
+    width: 110px;
+    height: 56px;
+}
+
+marquee {
+    color: var(--Primary, #E00911);
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.top-info {
+    display: flex;
+    gap: 16px;
+}
+
+.top-info .logo {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: var(--secondary);
+    color: var(--white)
+}
+
+.nav-link {
+    color: var(--white);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: var(--white);
+    transition: width 0.7s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: var(--white);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.hero {
+    padding: 40px 150px;
+}
+
+.hero .hero-text h1 {
+    font-family: "Helvetica Neue";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    /* 166.667% */
+}
+
+.hero .hero-text p {
+    color: var(--Black, #292929);
+    font-family: var(--poppins);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    gap: 32px;
+}
+
+.hero .hero-text button {
+    border-radius: 8px;
+    background: var(--primary, );
+    display: flex;
+    height: 58px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    color: var(--white);
+}
+
+.hero .hero-text button:hover {
+    background: var(--secondary, );
+    color: var(--white);
+}
+
+.hero .hero-text button i {
+    font-size: 24px;
+}
+
+.service {
+    padding: 6 0px 150px;
+    margin-bottom: 40px;
+}
+
+.service .title {
+    color: var(--primary);
+    font-family: var(--poppins);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+}
+
+.service .slogan {
+    color: var(--Black, #292929);
+    font-family: var(--poppins);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.service .card {
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.40);
+    cursor: pointer;
+}
+
+.service .card:hover {
+    box-shadow: 0px 8px 16px 0px rgba(171, 190, 255, 1);
+    transition: 0.5s;
+}
+
+.service .card .card-info {
+    padding: 16px;
+}
+
+.service .card .card-body .card-title {
+    color: var(--secondary);
+    font-family: var(--poppins);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.service .card .card-body .card-text {
+    color: var(--Gray, #687387);
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.service .card .card-body button {
+    color: var(--primary) !important;
+    font-family: var(--poppins);
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.service .card .card-body button:hover {
+    background-color: var(--secondary);
+    color: var(--white) !important;
+}
+
+.service .text-center .btn {
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+    padding: 16px 32px;
+}
+
+.service .text-center .btn:hover{
+    background-color: var(--secondary);
+    color: var(--white) !important;
+    border: 1px solid var(--secondary);
+}

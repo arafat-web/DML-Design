@@ -6,16 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style/style.css">
-    <title></title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>DML Design</title>
 </head>
 
 <body>
-    <!-- <div class="container">
-        <marquee class="border custom-border-primary pt-2 pb-2 ms-2 align-self-center rounded custom-text-primary"
-            behavior="scroll" direction="left">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, repudiandae.
-        </marquee>
-    </div> -->
     <header class="container p-2">
         <a href="/">
             <img src="img/logo/logo.png" alt="logo" class=" top-logo" />
@@ -26,7 +21,7 @@
             </div>
             <div>
                 <p class="custom-text-secondary mb-0 font-poppins fw-bolder">Mon - Sat 8.00 - 18.00</p>
-                <p class="custom-text-secondary mb-0 font-poppins">Sunday - CLOSED</p>
+                <p class="custom-text-secondary mb-0 font-poppins">24 Hours Service</p>
             </div>
         </div>
         <div class="top-info mt-3">
@@ -77,19 +72,37 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shipping Rate</a>
+                    </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Enter Your Tracking ID"
                         aria-label="Search">
                     <button class="btn custom-bg-primary text-white" type="submit">Track</button>
+                    <div class="dropdown ms-2">
+                        <a class="btn custom-bg-secondary text-white custom-border-primary dropdown-toggle" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            English
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Bengali</a></li>
+                        </ul>
+                    </div>
                 </form>
             </div>
         </div>
     </nav>
+    <div class="container">
+        <marquee class="border custom-border-primary pt-2 pb-2 ms-2 align-self-center rounded custom-text-primary"
+            behavior="scroll" direction="left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, repudiandae.
+        </marquee>
+    </div>
     <section class="hero">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 hero-text">
+                <div data-aos="fade-right" data-aos-duration="2000" class="col-md-6 hero-text">
                     <h1 class="custom-text-secondary">Boast Your Business With
                         DML Courier & Cargo</h1>
                     <p class="custom-text-primary">
@@ -101,7 +114,7 @@
                     </button>
 
                 </div>
-                <div class="col-md-6 hero-img">
+                <div data-aos="fade-left" data-aos-duration="2000" class="col-md-6 hero-img">
                     <img src="img/hero/hero.png" alt="hero" class="img-fluid " />
                 </div>
             </div>
@@ -112,20 +125,29 @@
         <img src="img/frame-31.png" class="img-fluid" alt="">
     </section>
 
-    <section class="service">
+    <!-- <section class="shipping-rate container">
+        <div class="title">
+            Shipping Rate
+        </div>
+        <div class="slogan">
+            The Reasonable Shipping Rate
+        </div>
+    </section> -->
+
+    <section class="service container">
         <div class="title">
             Services
         </div>
         <div class="slogan">
             Our services for you
         </div>
-        <div class="content">
+        <div class="content mt-5">
             <div class="row">
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4" data-aos="fade-right" data-aos-duration="2000">
                     <div class="card m-0 p-0 border-0 shadow-sm">
                         <div class="card-body m-0 p-0">
                             <div class="card-img">
-                                <img src="img/service/service-1.png" class="img-fluid rounded" alt="">
+                                <img src="img/service/service-1.png" class="rounded" alt="">
                             </div>
                             <div class="card-info">
                                 <div class="card-title p-2">
@@ -141,7 +163,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="2000">
                     <div class="card m-0 p-0 border-0 shadow-sm">
                         <div class="card-body m-0 p-0">
                             <div class="card-img">
@@ -161,7 +183,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4" data-aos="fade-left" data-aos-duration="2000">
                     <div class="card m-0 p-0 border-0 shadow-sm">
                         <div class="card-body m-0 p-0">
                             <div class="card-img">
@@ -181,7 +203,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4" data-aos="fade-right" data-aos-duration="2000">
                     <div class="card m-0 p-0 border-0 shadow-sm">
                         <div class="card-body m-0 p-0">
                             <div class="card-img">
@@ -201,7 +223,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="2000">
                     <div class="card m-0 p-0 border-0 shadow-sm">
                         <div class="card-body m-0 p-0">
                             <div class="card-img">
@@ -221,7 +243,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4 ">
+                <div class="col-md-4 mb-4" data-aos="fade-left" data-aos-duration="2000">
                     <div class="card m-0 p-0 border-0 shadow-sm">
                         <div class="card-body m-0 p-0">
                             <div class="card-img">
@@ -248,7 +270,310 @@
         </div>
     </section>
 
+    <section class="whatwedo container mb-5">
+        <div class="title" data-aos="fade-down" data-aos-duration="2000">
+            DML Courier & Cargo is a Global Supplier
+            of Transport and logistics Solutions.
+        </div>
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-right" data-aos-duration="2000">
+                <div class="card m-0 p-0 border-0 shadow-sm">
+                    <div class="card-body m-0 p-0">
+                        <div class="card-img">
+                            <img src="img/whatwedo/1.svg" class="img-fluid rounded" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title p-2">
+                                International Express
+                            </div>
+                            <div class="card-text p-2">
+                                DML Courier & Cargo provides a global solution for moving time-sensitive documents and
+                                parcels door-to-door around the world and within a variety of transit times.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000">
+                <div class="card m-0 p-0 border-0 shadow-sm">
+                    <div class="card-body m-0 p-0">
+                        <div class="card-img">
+                            <img src="img/whatwedo/2.svg" class="img-fluid rounded" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title p-2">
+                                Document Express
+                            </div>
+                            <div class="card-text p-2">
+                                Through an extensive network and competitive shipping rates, DML Courier & Cargo
+                                guarantees on time door-to-door delivery of your urgent parcels to any destination.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-left" data-aos-duration="2000">
+                <div class="card m-0 p-0 border-0 shadow-sm">
+                    <div class="card-body m-0 p-0">
+                        <div class="card-img">
+                            <img src="img/whatwedo/3.svg" class="img-fluid rounded" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title p-2">
+                                Parcel Express
+                            </div>
+                            <div class="card-text p-2">
+                                Your non document shipments are specially packaged, swiftly shipped and attentively
+                                cleared through our experienced custom staffs to arrive on time to any global
+                                destination.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact container">
+        <div class="title">
+            Contact
+        </div>
+        <div class="slogan">
+            Get in touch with us
+        </div>
+        <div class="description text-center m-auto mt-2 mb-4">
+            Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further
+            the overall value.
+        </div>
+        <div class="row">
+            <div class="col-md-5 left-content">
+                <div class="content">
+                    <div class="content-list" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="icon">
+                            <img src="img/contact/1.svg" alt="">
+                        </div>
+                        <div class="content-text">
+                            <div class="title-text">
+                                Call Us
+                            </div>
+                            <div class="description-text">
+                                +88 01313488205
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-list" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="icon">
+                            <img src="img/contact/2.svg" alt="">
+                        </div>
+                        <div class="content-text">
+                            <div class="title-text">
+                                Email
+                            </div>
+                            <div class="description-text">
+                                contact@logistics.com
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-list" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="icon">
+                            <img src="img/contact/3.svg" alt="">
+                        </div>
+                        <div class="content-text">
+                            <div class="title-text">
+                                Location
+                            </div>
+                            <div class="description-text">
+                                144, Muktobangla Shopping Complex,
+                                <br />
+                                Dhaka 1216, Bangladesh
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 right-content">
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Input Your Email">
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-left" data-aos-duration="2000">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Subject</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Input Your Subject">
+                            </div>
+                        </div>
+                        <div class="col-md-12" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                <textarea placeholder="Input Your Message" class="form-control"
+                                    id="exampleFormControlTextarea1" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="" data-aos="fade-up" data-aos-duration="2000">
+                        <button class="btn custom-bg-primary text-white px-4 py-2" type="button">Send Message </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="office container mt-5">
+        <div class="title">
+            Office
+        </div>
+        <div class="slogan pb-2">
+            Find Us On Google Map
+        </div>
+        <div class="map p-4 rounded shadow-sm" data-aos="zoom-in" data-aos-duration="2000">
+            <img src="img/map.png" height="500px" width="100%" alt="">
+        </div>
+    </section>
+
+    <section class="testimonial container mt-5 mb-5">
+        <div class="title">
+            Testimonial
+        </div>
+        <div class="slogan pb-2 mb-4">
+            What Our Customer’s Say
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="testimonial-item custom-bg-secondary">
+                    <div class="item-user">
+                        <img src="img/user.svg" alt="">
+                        <div class="user-text text-white">
+                            <div class="user-name fw-bolder">
+                                David James
+                            </div>
+                            <div class="user-designation fw-normal">
+                                Businessman
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-text p-2 ps-4">
+                        <img src="img/qoute.svg" alt="">
+                        <p class="mt-3 text-white">
+                            It is a long established fact that a reader will be distracted by the readable content
+                            of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                            here', making it look like readable English.
+                        </p>
+                        <div class="star">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="testimonial-item shadow-sm" style="background-color: #EEF2FF;">
+                    <div class="item-user">
+                        <img src="img/user.svg" alt="">
+                        <div class="user-text text-black">
+                            <div class="user-name fw-bolder">
+                                David James
+                            </div>
+                            <div class="user-designation fw-normal">
+                                Businessman
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-text p-2 ps-4">
+                        <img src="img/qoute.svg" class="qoute-img" alt="">
+                        <p class="mt-3 text-black">
+                            It is a long established fact that a reader will be distracted by the readable content
+                            of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                            here', making it look like readable English.
+                        </p>
+                        <div class="star">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-5">
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <img src="img/logo/footer-logo.png" width="220.93px" ; height="112.474px" ; alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-title text-white pb-3">
+                        Contact Us
+                    </div>
+                    <div class="footer-text">
+                        <p class="text-white">
+                            <img src="img/phone-icon.svg" alt="">
+                            <span class="ps-3">+88 01313488205</span>
+                        </p>
+                        <p class="text-white">
+                            <img src="img/mail-icon.svg" alt="">
+                            <span class="ps-3">contact@logistics.com</span>
+                        </p>
+                        <p class="text-white d-flex">
+                            <img src="img/map-icon.svg" class="" alt="">
+                            <span class="ps-3">144, Muktobangla Shopping Complex,
+                                Dhaka 1216, Bangladesh</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-title text-white pb-3">
+                        Quick Links
+                    </div>
+                    <div class="footer-link">
+                        <a href="#" class="text-white">Home</a>
+                        <a href="#" class="text-white">About Us</a>
+                        <a href="#" class="text-white">Services</a>
+                        <a href="#" class="text-white">Blog</a>
+                        <a href="#" class="text-white">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-title text-white pb-3">
+                        Follow Us
+                    </div>
+                    <div class="footer-share">
+                        <img src="img/facebook-icon.svg" class="" alt="">
+                        <!-- <img src="img/twitter-icon.svg"  class="" alt=""> -->
+                        <img src="img/linkedin-icon.svg" class="" alt="">
+                        <!-- <img src="img/instagram-icon.svg" class="" alt=""> -->
+                        <!-- <img src="img/whatsapp-icon.svg" class=""  alt=""> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

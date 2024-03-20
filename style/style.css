@@ -90,6 +90,15 @@ marquee {
     color: var(--white)
 }
 
+.navbar .navbar-toggler{
+    border: none;
+    outline: none;  
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon {
+    background-image: url("../img/icon/humbergur.svg");
+}
+
 .nav-link {
     color: var(--white);
     font-weight: 300;
@@ -125,6 +134,17 @@ marquee {
     padding-left: 0;
     margin-right: 10px;
     margin-left: 10px;
+}
+
+.dropdown-item {
+    color: var(--white);
+    font-weight: 300;
+    font-size: 16px;
+}
+.dropdown-item:hover {
+    background-color: var(--secondary);
+    color: var(--white);
+    opacity: 0.7;
 }
 
 .hero {
@@ -279,7 +299,7 @@ marquee {
     background-repeat: no-repeat;
     padding: 40px 40px;
     border-radius: 8px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("/img/whatwedo.png") lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("/img/whatwedo/whatwedo.png") lightgray 50% / cover no-repeat;
 }
 
 .whatwedo .title {
@@ -330,7 +350,7 @@ marquee {
     flex: 1 0 0;
     align-self: stretch;
     border-radius: 8px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%), url("/img/contact.png") lightgray 50% / cover no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%), url("/img/contact/contact.png") lightgray 50% / cover no-repeat;
     padding: 150px 0px 20px 20px;
 }
 
@@ -415,6 +435,11 @@ marquee {
     background: var(--white, #FFF);
 }
 
+.contact .right-content .btn:hover{
+    background-color: var(--secondary);
+    color: white;
+}
+
 .testimonial .testimonial-item {
     border-radius: 8px;
     display: flex;
@@ -445,6 +470,8 @@ marquee {
 .testimonial .testimonial-item .item-text .qoute-img {
     filter: brightness(0) saturate(100%);
 }
+
+
 
 .footer {
     background: url("/img/footer.png") lightgray 10% / cover no-repeat;
@@ -492,7 +519,14 @@ marquee {
     width: 32px;
     height: 32px;
 }
-
+.footer .footer-copyright{
+    display: flex;
+    padding: 24px 0px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    border-top: 1px solid var(--gray, #687387);
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     .hero {
@@ -764,6 +798,60 @@ marquee {
         border-radius: 8px;
         border: 1px solid var(--secondary, #312C7F);
         background: var(--white, #FFF);
+    }
+
+    .footer .footer-title {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        margin-top: 20px;
+    }
+    
+    .footer .footer-text p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: 24px;
+    }
+    
+    .footer .footer-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    
+    .footer .footer-link a {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: 24px;
+        text-decoration: none;
+        /* 150% */
+    }
+    
+    .footer .footer-share {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .footer .footer-share img {
+        width: 32px;
+        height: 32px;
+    }
+    .footer .footer-copyright{
+        /* flex: 1 0 0; */
+        display: block;
+        color: #F6F7F9;
+        text-align: center;
+        font-family: var(--poppins);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 166.667% */
     }
 }
 

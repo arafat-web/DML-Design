@@ -15,7 +15,7 @@
         <a href="/">
             <img src="img/logo/logo.png" alt="logo" class="top-logo" />
         </a>
-        <div class="top-info mt-3 d-none d-md-flex">
+        <div class="top-info mt-2 d-none d-md-flex">
             <div class="logo">
                 <i class="bi bi-clock"></i>
             </div>
@@ -24,7 +24,7 @@
                 <p class="custom-text-secondary mb-0 font-poppins">24 Hours Service</p>
             </div>
         </div>
-        <div class="top-info mt-3 d-none d-md-flex">
+        <div class="top-info mt-2 d-none d-md-flex">
             <div class="logo">
                 <i class="bi bi-envelope"></i>
             </div>
@@ -33,7 +33,7 @@
                 <p class="custom-text-secondary mb-0 font-poppins">contact@logistics.com</p>
             </div>
         </div>
-        <div class="top-info mt-3 d-none d-md-flex  ">
+        <div class="top-info mt-2 d-none d-md-flex  ">
             <div class="logo">
                 <i class="bi bi-telephone"></i>
             </div>
@@ -42,54 +42,69 @@
                 <p class="custom-text-secondary mb-0 font-poppins">+88 01313488205</p>
             </div>
         </div>
+        <div class=" top-mobile-info me-3 d-md-none d-xs-flex">
+            <p class="custom-text-secondary mb-0 font-poppins"><i class="bi bi-envelope me-2"></i> contact@logistics.com</p>
+            <p class="custom-text-secondary mb-0 font-poppins"><i class="bi bi-telephone me-2"></i> +88 01313488205</p>
+        </div>
+
     </header>
 
     <nav class="navbar navbar-expand-lg custom-bg-secondary">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- Offcanvas toggle button (visible on xs) -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav d-flex me-auto my-2 py-2 my-lg-0 navbar-nav-scroll"
-                    style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="whatwedo.html">What We Do</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Shipping Rate</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Enter Your Tracking ID"
-                        aria-label="Search">
-                    <button class="btn custom-bg-primary text-white" type="submit">Track</button>
-                    <div class="dropdown ms-2">
-                        <a class="btn custom-bg-secondary text-white custom-border-primary dropdown-toggle" href="#"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            English
-                        </a>
-                        <ul class="dropdown-menu custom-bg-secondary">
-                            <li><a class="dropdown-item text-white" href="#">Bengali</a></li>
-                        </ul>
-                    </div>
-                </form>
+
+            <!-- Offcanvas Navigation (Mobile) -->
+            <div class="offcanvas offcanvas-start custom-bg-secondary" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="whatwedo.html">What We Do</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shipping Rate</a>
+                        </li>
+                        <div class="dropdown ms-2">
+                            <a class="btn custom-bg-secondary text-white custom-border-primary dropdown-toggle" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                English
+                            </a>
+                            <ul class="dropdown-menu custom-bg-secondary">
+                                <li><a class="dropdown-item text-white" href="#">Bengali</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
             </div>
+
+            <!-- Search Form (Visible on All Screens) -->
+            <form class="d-flex ms-auto" role="search">
+                <input class="form-control me-2" type="search" placeholder="Enter Your Tracking ID" aria-label="Search">
+                <button class="btn custom-bg-primary text-white" type="submit">Track</button>
+            </form>
         </div>
     </nav>
     <div class="container">
@@ -451,7 +466,7 @@
         <div class="slogan pb-2 mb-4">
             What Our Customer’s Say
         </div>
-        
+
         <div class="row">
             <div class="col-md-6 mb-4">
                 <div class="testimonial-item custom-bg-secondary">
@@ -575,7 +590,7 @@
             </div>
         </div>
         <div class="footer-copyright text-white container">
-            © 2024 All rights reserved. Developed by <span class="fw-bold">DML Courier & Cargo</span> 
+            © 2024 All rights reserved. Developed by <span class="fw-bold">DML Courier & Cargo</span>
         </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
